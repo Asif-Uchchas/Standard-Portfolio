@@ -9,3 +9,9 @@ export interface CustomButtonProps{
     rightIcon?: string;
     btnType?: "button" | "submit" | "reset" | undefined;
 }
+
+export interface ProjectItemProps{
+    title: string;
+    backgroundImg: string;
+    projectUrl: string;
+}
