@@ -1,12 +1,14 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Skills from "@/components/Skills";
+
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero/>
       <About/>
+      <Skills/>
     </main>
   );
 }
