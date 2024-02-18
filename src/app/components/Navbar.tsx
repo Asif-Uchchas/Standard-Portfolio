@@ -4,17 +4,19 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import CustomButton from "./CustomButton";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
 
   const handleNav = () => {
     setNav(!nav);
   };
-
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -28,6 +30,7 @@ const Navbar = () => {
 
   return (
     <header
+      style={{ backgroundColor: `${navBg}`}}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -39,7 +42,7 @@ const Navbar = () => {
           <Image src="/logo2.svg" alt="logo" width={50} height={50} />
         </Link>
         <div className="">
-          <ul className="hidden md:flex">
+          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
             <Link href="/">
               <CustomButton title="Home" containerStyles="nav-button" />
             </Link>
@@ -75,7 +78,9 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image src="logo2.svg" alt="logo" width={50} height={50} />
+              <Link href="/">
+                <Image src="/logo2.svg" alt="logo" width={50} height={50} />
+              </Link>
               <div
                 onClick={handleNav}
                 className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -92,29 +97,29 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <li className="py-4 text-sm">
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
                 <Link href="/">
-                  <CustomButton title="Home" />
+                  <CustomButton title="Home" textStyles="uppercase" />
                 </Link>
               </li>
-              <li className="py-4 text-sm">
-                <Link href="/about">
-                  <CustomButton title="About" />
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <Link href="/#about">
+                  <CustomButton title="About" textStyles="uppercase" />
                 </Link>
               </li>
-              <li className="py-4 text-sm">
-                <Link href="/contact">
-                  <CustomButton title="Skills" />
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <Link href="/#skills">
+                  <CustomButton title="Skills" textStyles="uppercase" />
                 </Link>
               </li>
-              <li className="py-4 text-sm">
-                <Link href="/contact">
-                  <CustomButton title="Projects" />
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <Link href="/#projects">
+                  <CustomButton title="Projects" textStyles="uppercase" />
                 </Link>
               </li>
-              <li className="py-4 text-sm">
-                <Link href="/contact">
-                  <CustomButton title="Contact" />
+              <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <Link href="/#contact">
+                  <CustomButton title="Contact" textStyles="uppercase" />
                 </Link>
               </li>
             </ul>

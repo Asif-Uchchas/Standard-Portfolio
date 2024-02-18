@@ -16,12 +16,12 @@ const Projects = () => {
                   <ProjectItem
                       title='Shaka Laka'
                       backgroundImg='/crypto.jpg'
-                      projectUrl='/crypto'
+                      projectUrl='/pages/crypto'
                   />
                   <ProjectItem
                       title='Property'
                       backgroundImg='/property.jpg'
-                      projectUrl='/property'
+                      projectUrl='/pages/property'
                   />
                   <ProjectItem
                       title='Netflix'
