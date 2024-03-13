@@ -14,4 +14,5 @@ export interface ProjectItemProps{
     title: string;
     backgroundImg: string;
     projectUrl: string;
+    description: string
 }

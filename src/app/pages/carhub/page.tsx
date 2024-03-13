@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectProperty from './ProjectProperty'
+import ProjectCarhub from './ProjectCarhub'
 
 const property = () => {
   return (
     <div>
-      <ProjectProperty/>
+      <ProjectCarhub/>
     </div>
   )
 }

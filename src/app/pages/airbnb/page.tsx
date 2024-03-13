@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectCrypto from './ProjectCrypto'
+import ProjectAirbnb from './ProjectAirbnb'
 
 const Crypto = () => {
   return (
     <div>
-      <ProjectCrypto/>
+      <ProjectAirbnb/>
     </div>
   )
 }

@@ -14,25 +14,29 @@ const Projects = () => {
               <div className="grid md:grid-cols-2 gap-8">
                   
                   <ProjectItem
-                      title='Shaka Laka'
-                      backgroundImg='/crypto.jpg'
-                      projectUrl='/pages/crypto'
+                      title='Airbnb'
+                      backgroundImg='/Airbnb.png'
+            projectUrl='/pages/airbnb'
+            description="A home rental web app built with NextJs and MongoDB"
                   />
                   <ProjectItem
-                      title='Property'
-                      backgroundImg='/property.jpg'
-                      projectUrl='/pages/property'
+                      title='Carhub'
+                      backgroundImg='/Carhub.png'
+            projectUrl='/pages/carhub'
+            description="A car rental service built with NextJs and TailwindCSS"
                   />
                   <ProjectItem
-                      title='Netflix'
-                      backgroundImg='/netflix.jpg'
-                      projectUrl='/netflix'
+                      title='GoTravelot'
+                      backgroundImg='/gotravelot.png'
+            projectUrl='/pages/gotravelot'
+            description="A hotel rental website built with NextJs and SQLite"
                   />
-                  <ProjectItem
+                  {/* <ProjectItem
                       title='Twitch'
                       backgroundImg='/twitch.jpg'
-                      projectUrl='/twitch'
-                  />
+            projectUrl='/twitch'
+            description="A home rental web app built with NextJs and TailwindCSS"
+                  /> */}
                   
         </div>
       </div>
