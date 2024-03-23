@@ -44,7 +44,7 @@ const ProjectAirbnb = () => {
             title="View Project"
             containerStyles="w-50 px-8 py-2 mt-4 mr-8 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] font-bold"
             textStyles="text-white"
-            handleClick={() => {router.push("https://airbnb-indol-eta.vercel.app/")}}
+            handleClick={() => {router.push("https://airbnb-livid-nine.vercel.app/")}}
           />
           <CustomButton
             title="View Code"
