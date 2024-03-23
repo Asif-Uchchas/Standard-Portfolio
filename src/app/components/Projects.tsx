@@ -26,17 +26,17 @@ const Projects = () => {
             description="A car rental service built with NextJs and TailwindCSS"
                   />
                   <ProjectItem
+                      title='Medsync'
+                      backgroundImg='/medsync.png'
+            projectUrl='/pages/medsync'
+            description="Your personalized medication manager for a healthier life."
+                  />
+                  <ProjectItem
                       title='GoTravelot'
                       backgroundImg='/gotravelot.png'
             projectUrl='/pages/gotravelot'
             description="A hotel rental website built with NextJs and SQLite"
                   />
-                  {/* <ProjectItem
-                      title='Twitch'
-                      backgroundImg='/twitch.jpg'
-            projectUrl='/twitch'
-            description="A home rental web app built with NextJs and TailwindCSS"
-                  /> */}
                   
         </div>
       </div>
